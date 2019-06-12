@@ -1,20 +1,19 @@
-<p>{{firstname}}</p>
 
-<p>{{age}}</p>
-
-<p> {{person.firstname}} </p>
-
-<p> {{person.lastname}} </p>
-
-<p>{{100 + 100}}</p>
-
-<mat-card class="example-card">
+<mat-card class="my-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>Dados Pessoa</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      
+      <p>First name: {{person.firstname}} </p>
+      <p>Last name: {{person.lastname}} </p>
+      <p>Age: {{person.age}}</p>
+      <p>Address: {{person.addresss}} </p>
+      <form>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" value="{{person.firstname}}">
+        </mat-form-field>
+      </form>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>
